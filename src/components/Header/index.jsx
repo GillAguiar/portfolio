@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import styles from './Header.module.css'
+import { Link } from 'react-router-dom'
 
-export function Header() {
+function Header() {
 
     const [ showMenu, setShowMenu ] = useState(false)
     const toogleMenu = () => {
@@ -10,15 +11,17 @@ export function Header() {
 
     return (
         <header className={styles.header}>
-            <span>GilAguiar.dev</span>
+          <Link to='/'>
+             <span>GilAguiar.dev</span>
+          </Link>
             <nav 
                 className={`${styles.menuSandwich} ${ showMenu ? styles.show : '' }`}
                 onClick={toogleMenu}
             >
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Projetos</a>
-                <a href="#">Contatos</a>
+                <Link to='/'>Home</Link>
+                <Link to='/sobre'>Sobre</Link>
+                <Link to='/projetos'>Projetos</Link>
+                <Link to='/contatos'>Contatos</Link>
             </nav>
             <div className={styles.menuButton}
                  onClick={toogleMenu}
@@ -30,3 +33,5 @@ export function Header() {
         </header>
     )
 }
+
+export default Header
