@@ -1,0 +1,36 @@
+.textos {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.texto_grande {
+    font-size: 2.4rem;
+}
+
+.texto_medio {
+    font-size: 1.9rem;
+}
+
+.texto_pequeno {
+    font-size: 1rem;
+}
+
+.icones {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--red);
+    padding-block: 1.5rem;
+}
+
+.icone {
+    font-size: 3rem;
+    color: var(--red);
+}
