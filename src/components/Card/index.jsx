@@ -4,15 +4,18 @@ function Card() {
   return (
     <section className={styles.card}>
       <h3>Título</h3>
-      <p>Descrição do projeto</p>
+      <p>Descrição do projeto <br />
+        pipipipopopo
+      </p>    
       <div className={styles.card_footer}>
         <div className={styles.card_icons}>
             html
+            css js node
         </div>
-      </div>
-      <button className={styles.card_button}>
+        <button className={styles.card_button}>
         Botão
       </button>
+      </div>
     </section>
   );
 }
