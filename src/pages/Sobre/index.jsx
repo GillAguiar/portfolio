@@ -10,7 +10,7 @@ function Sobre() {
         <div className={styles.textos}>
           <h2>Sobre</h2>
           <p>Sou <span>Gildásio Aguiar</span> <br />
-          <strong>Dev Full Stack</strong></p>
+          <strong>Web Developer</strong></p>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /></p>
 
